@@ -25,3 +25,5 @@ To use cryptode API run:
 ```bash
 py api.py
 ```
+
+You can visit Cryptode on [PyPI](https://pypi.org/project/Cryptode/)
