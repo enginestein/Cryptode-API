@@ -292,6 +292,6 @@ Cryptode API is same as the Cryptode library for Rust but there are slight chang
 -z
 -zigzag
 
-Documentation is available [here](https://enginestein.github.io/Cryptode/) but the `pwhash` is not available in Cryptode API but is available in Cryptode.
+You can visit Cryptode documentation [here](https://enginestein.github.io/Cryptode/) for API function reference but the `pwhash` is not available in Cryptode API but is available in Cryptode.
 
 You can visit Cryptode on [PyPI](https://pypi.org/project/Cryptode/)
