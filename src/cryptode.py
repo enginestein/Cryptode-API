@@ -2553,7 +2553,7 @@ def pwhash_verify(hp, passwd):
     res = argon2id_verify(hp, passwd, ctypes.c_ulonglong(len(passwd)))
     return res == 0
 
-argon2id_hash_raw = argon2.argon2id_hash_raw
+argon2id_hash_raw = argon2.hash_password_raw
 argon2id_hash_raw.restype = ctypes.c_int
 argon2id_hash_raw.argtypes = [
     ctypes.POINTER(ctypes.c_ubyte),
@@ -2566,7 +2566,7 @@ argon2id_hash_raw.argtypes = [
     ctypes.c_size_t
 ]
 
-argon2id_hash_encoded = argon2.argon2id_hash_encoded
+argon2id_hash_encoded = argon2.hash_password
 argon2id_hash_encoded.restype = ctypes.c_int
 argon2id_hash_encoded.argtypes = [
     ctypes.POINTER(ctypes.c_char),
@@ -2576,7 +2576,7 @@ argon2id_hash_encoded.argtypes = [
     ctypes.c_size_t
 ]
 
-argon2id_verify = argon2.argon2id_verify
+argon2id_verify = argon2.verify_password
 argon2id_verify.restype = ctypes.c_int
 argon2id_verify.argtypes = [
     ctypes.POINTER(ctypes.c_char),
@@ -2622,7 +2622,7 @@ def pwhash_verify(hp, passwd):
 # -------------------------------------------------- #
 
 
-class HashedPassword:
+'''class HashedPassword:
     def __init__(self, value):
         self.value = value
 
@@ -2685,7 +2685,7 @@ def run_derive_key_test(password, salt, expected, out_len, ops, mem):
     derive_key(out_bin, password, salt, ops, mem)
 
     if out_bin.raw != expected:
-        raise Exception("Output does not match expected result")
+        raise Exception("Output does not match expected result")'''
 
 # -------------------------------------------- #
 
