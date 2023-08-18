@@ -32,9 +32,9 @@ py api.py
 All the code that handles the [Cryptode framework](https://github.com/enginestein/Cryptode) which is written in Rust is in the [cryptode.py](https://github.com/enginestein/Cryptode-API/blob/main/src/cryptode.py) file which wraps the Rust code to make it usable in Python. After installing Cryptode from pip, you can use Cryptode:
 
 ```py
-from Cryptode import another_rot13
+from cryptode import cryptode
 
-print(another_rot13("Hello World")) 
+print(cryptode.another_rot13("Hello World")) 
 ```
 
 The above code encodes the text `Hello World` with Rot 13 encryption algorithm
